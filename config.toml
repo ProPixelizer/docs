@@ -13,7 +13,7 @@ build_search_index = true
 # theme = "zola_easydocs_theme"
 #theme = "hyde"
 # theme = "book"
-theme = "abridge"
+#theme = "abridge"
 
 author = "Elliot Bentine"
 
@@ -28,3 +28,4 @@ bottom_footnotes = false
 
 [extra]
 # Put all your custom variables here
+easydocs_heading_threshold = 1

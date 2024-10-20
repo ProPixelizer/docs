@@ -37,8 +37,7 @@ You can now add ProPixelizer to each Render Pipeline Asset that you are using.
 # 4. Check out the examples!
 
 You have now configured your project for ProPixelizer.
-To verify things are working, you can navigate to the example scenes included in ProPixelizer.
-These example scenes show you lots of interesting things you can do with ProPixelizer, and showcase various features of the plugin, so I recommend looking through them!
+The [example scenes](../examples) show you lots of interesting things you can do with ProPixelizer, and showcase various features of the plugin, so I recommend taking a look!
 
 I hope you enjoy using ProPixelizer. If you have any issues, please do email me (elliot.bentine@gmail.com) or add me on Discord (elliotb256) and I will do my best to help.
 
