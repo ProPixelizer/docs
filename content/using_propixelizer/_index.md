@@ -1,6 +1,6 @@
 +++
-title = "Getting Started"
+title = "Using ProPixelizer"
 sort_by = "weight"
-weight = 2
+weight = 3
 insert_anchor_links = "left"
 +++

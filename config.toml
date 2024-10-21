@@ -10,7 +10,7 @@ compile_sass = true
 build_search_index = true
 
 #theme = "adidoks"
-# theme = "zola_easydocs_theme"
+theme = "zola_easydocs_theme"
 #theme = "hyde"
 # theme = "book"
 #theme = "abridge"
