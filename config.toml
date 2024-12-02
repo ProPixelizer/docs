@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://propixelizer.github.io/docs"
-title = "ProPixelizer Documentation"
+title = "ProPixelizer"
 description = "Documentation for the ProPixelizer package for Unity"
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -27,6 +27,6 @@ bottom_footnotes = false
 [extra]
 # Put all your custom variables here
 easydocs_heading_threshold = 1
-# logo = "assets/icon.png"
-favicon = "assets/icon.png"
-release = "https://api.github.com/repos/getzola/zola/releases/latest"
+logo = "propixelizer.ico"
+favicon = "propixelizer.ico"
+package_version = "2.0.1"
