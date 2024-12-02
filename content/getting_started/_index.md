@@ -2,5 +2,5 @@
 title = "Getting Started"
 sort_by = "weight"
 weight = 2
-insert_anchor_links = "left"
+insert_anchor_links = "right"
 +++

@@ -16,8 +16,6 @@ theme = "zola_easydocs_theme"
 #theme = "abridge"
 
 author = "Elliot Bentine"
-
-
 generate_sitemap = true
 
 [markdown]
@@ -29,3 +27,6 @@ bottom_footnotes = false
 [extra]
 # Put all your custom variables here
 easydocs_heading_threshold = 1
+# logo = "assets/icon.png"
+favicon = "assets/icon.png"
+release = "https://api.github.com/repos/getzola/zola/releases/latest"
