@@ -1,7 +1,7 @@
 +++
-title = "How to: Eliminate Pixel Creep"
-description = "How to: Eliminate Pixel Creep"
-weight = 1
+title = "Eliminating Pixel Creep"
+description = "Eliminating Pixel Creep"
+weight = 10
 +++
 
 Pixel creep is a problem that occurs frequently when rendering 3D objects as pixel art - the object appears to shimmer as it moves across the screen. An example can be seen in this video: https://www.youtube.com/watch?v=lO8O5tY-wZI . The creep occurs because both the number of pixels that an object occludes, and the alignment of the object with respect to the pixels, changes as it moves across the screen.
