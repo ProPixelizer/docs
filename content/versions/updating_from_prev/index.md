@@ -4,8 +4,6 @@ weight = 3
 date= 2024-10-19
 +++
 
-# Version update notes
-
 ## Updating to v2.0
 
 - Version 2.0 adds a lot of new features, and much of the package has been rewritten. Despite this, you shouldn't need to make any changes to your project!

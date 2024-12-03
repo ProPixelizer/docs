@@ -3,7 +3,7 @@ title = "Version History"
 weight = 10
 +++
 
-# Version 2.0
+## Version 2.0
 
 - **Added** Low-res render target mode.
 - **Added** Hybrid low-res render target mode.
@@ -19,6 +19,7 @@ weight = 10
 - **Added** Screen resolution movement for low res targets ('camera subpixel motion').
 - **Added** Lots of new example content and notes, showing you how to get the most out of ProPixelizer!
 - **Added** Support for Forward+ rendering path.
+- **New Documentation** rewritten from scratch using Zola.
 - Reduced the number of material keywords and changed some to shader_feature_local, which should give faster compile times.
 - **Fixed** Depth buffer post-processing effects in 2022.
 - **Fixed** greatly improved the edge detection kernels to give 1px edges more reliably.
@@ -26,7 +27,7 @@ weight = 10
 
 _Version 1.9 gradually evolved into a large enough update to warrant skipping to 2.0._
 
-# Version 1.8.1
+## Version 1.8.1
 
 - **Added** ObjectRenderSnapable no longer required for static objects - snapping will occur automatically!
 - **Added** Warning when MSAA is enabled (this is a common cause of confusion).
@@ -41,7 +42,7 @@ _Version 1.9 gradually evolved into a large enough update to warrant skipping to
 - **Fixed** Scene tab camera depth in 2021 and 2022 (affects Gizmos and grids).
 - **Fixed** Preview cameras for ProPixelizer materials.
 
-# Version 1.8
+## Version 1.8
 
 - **Added** support for Unity 2022.2. This required significant work to get things running in URP14, which contained a number of breaking API changes.
 - **Added** support for scene ambient light and SH probes. The AmbientLight property now has an alpha channel - use this to control blending between scene ambient light or the color specified by the AmbientLight property.
@@ -58,7 +59,7 @@ _Version 1.9 gradually evolved into a large enough update to warrant skipping to
 - Known bug (2021.3/2022): Crash or invisibility when SRPBatcher is enabled. The SRPBatcher remains broken with any USEPASS shaders in recent versions of Unity. I have reported this to Unity, and given minimal examples (see here), but all I can do is wait for them to fix. Does not affect builds.
 - Known bug (2022.2): Dots in preview window. The preview window is bugged in this Unity version, see here and here for more details.
 
-# Version 1.7
+## Version 1.7
 
 - **Added** `[MainColor]` property attribute for PixelizedWithOutline shader.
 - **Added** option to snap object angles in camera space, to help create a 'billboard' effect.
@@ -87,7 +88,7 @@ _Version 1.9 gradually evolved into a large enough update to warrant skipping to
 - **Renamed** Pixelized to ProPixelizerBase and changed the shader GUI to redirect users to use the PixelizedWithOutline material instead.
 - **Dropped** support for 2019 LTS, remade all example assets (e.g. Render pipeline, post process data, shadergraph) in 2020 LTS.
 
-# Version 1.6
+## Version 1.6
 
 v1.6 adds significant new functionality to outlining. You are strongly recommended to use the Appearance+Outline material.
 
@@ -113,7 +114,7 @@ v1.6 adds significant new functionality to outlining. You are strongly recommend
 - **Fixed** Camera snap for moving cameras.
 - Tidied up the example ShaderGraph, added more useful subgraphs.
 
-# Version 1.5
+## Version 1.5
 
 - **Added** improved workflow for palettes. Individual palettes are now assets, so the values used for generating LUTs are saved.
 - **Added** editor tool for user-defined 4x4 dither patterns.
@@ -123,7 +124,7 @@ v1.6 adds significant new functionality to outlining. You are strongly recommend
 - **Fixed** Correct pixelation for material preview, material icons and shader graph preview (fix for 2020+ only, URP on 2019 LTS doesn't expose required properties).
 - **Fixed** editor warning when selecting in inspector (fix for 2020+ only, URP on 2019 LTS doesn't expose required properties).
 
-# Version 1.4
+## Version 1.4
 
 - **Added** dither pattern support.
 - **Added** single material to produce both outlines and appearance.
@@ -133,7 +134,7 @@ v1.6 adds significant new functionality to outlining. You are strongly recommend
 - **Improved** Palette Builder tool.
 - Made shader keywords consistent - run Window/ProPixelizer/Verify Materials to fix broken materials.
 
-# Version 1.3
+## Version 1.3
 
 - **Added** option for depth-tested outlines, to prevent outlines when objects overlap (see option in render feature).
 - **Added** alpha cutout support.
@@ -144,7 +145,7 @@ v1.6 adds significant new functionality to outlining. You are strongly recommend
 - **Fixed** support for Unity 2020.2 and URP 10.2
 - **Performance improvement:** Large performance improvement on all platforms (3 pixelation passes for color/outline/depth now reduced to a single 'Pixelization Map' pass). 
 
-# Version 1.2
+## Version 1.2
 
 - **Fixed** creep/malformation at some resolutions.
 - **Fixed** tearing in perspective projection.
