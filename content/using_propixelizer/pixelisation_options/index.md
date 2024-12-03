@@ -4,6 +4,6 @@ weight = 3
 +++
 
 
-# Pixelisation Options
+## Pixelisation Options
 
 ## 

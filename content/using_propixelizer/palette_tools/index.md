@@ -4,7 +4,7 @@ weight = 2
 +++
 
 
-# Palettes and Dither Patterns
+## Palettes and Dither Patterns
 
 Many old games used reduced color palettes, often due to hardware limitations! For example, the original GameBoy could only display 4 different brightness values, and the SNES could only display 256 colors at once. Games sometimes employed dithering to emulate an increased color depth.
 
