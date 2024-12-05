@@ -1,5 +1,5 @@
 +++
-title = "Pixelisation Methods"
+title = "Pixelisation Controls"
 weight = 2
 +++
 
@@ -25,28 +25,32 @@ This later 'hybrid' style is reminiscent of games from the 90s like Breath of Fi
 A scene from the playstation game 'Breath of Fire IV' demonstrating a hybrid style.
 {% end %}
 
-
-{% article_image(image="bats.gif") %}
+{% article_image(image="bats.gif", gif=true) %}
 A hybrid setup in ProPixelizer. The characters are drawn pixelated, while a low poly environment is used for the surroundings.
 {% end %}
 
 ## Pixel Expansion
 
-Despite being a popular method, using a low-resolution render target has a significant drawback. In order to prevent pixel creep artefacts from occuring, objects must be snapped to the pixels of the low-resolution target. As the target becomes more pixelated, the freedom to move objects becomes more and more constrained. This has a negative effect on the 'controller feel' for games that require precise feedback; motion becomes clunkier because small 'sub-pixel' increments are not possible.
+Despite being a popular method, using a low-resolution render target has a major drawback: In order to prevent pixel creep artefacts from occuring, objects must be snapped to the pixels of the low-resolution target. When the target is more pixelated, the object motion becomes more constrained. This has a negative effect on the 'user feel' in games that require precise feedback, such as action rpgs and arcade games - the motion becomes clunkier because small 'sub-pixel' increments are not possible.
 
-To solve this problem, ProPixelizer provides a pixel expansion method. I created this method specifically for ProPixelizer, and describe its implementation here, under attempt 3. This technique works by drawing objects as a dithered pattern, and then expanding these dots into larger pixels through a post process. The result is that a given level of pixelization can be achieved using a smaller low-resolution target pixel size, and thus smooth movement can be retained. The method also supports per-object pixel sizes.
+{% article_image(image="full_screen_wo_pixel_expansion.gif", gif=true) %}
+Creepless motion using a low-resolution render target. Individual objects must move in increments of the low-resolution render target.
+{% end %}
 
-This image is taken from the Floating example scene, with world-space pixel size turned up, a material pixel size of 5, and pixel expansion enabled. The white lines show a grid aligned to the pixels of the sphere on the left. The cubes on the right are free to move at apparent 'sub-pixel' resolution, without exhibiting pixel creep.
+ProPixelizer solves this problem using **Pixel Expansion**. I created this method specifically for ProPixelizer, and describe its implementation [here](https://medium.com/@elliotbentine/pixelizing-3d-objects-b55ec33328f1), under attempt 3. This technique works by drawing objects as a dithered pattern, and then expanding these dots into larger pixels through a post process. The result is that a given level of pixelization can be achieved using a smaller low-resolution target pixel size, and thus smooth movement can be retained. The method also supports per-object pixel sizes.
 
-If you want to use Pixel Expansion, simply tick the checkbox in the render feature to enable it.
-Performance
+{% article_image(image="full_screen_w_pixel_expansion.gif", gif=true) %}
+Creepless motion using a low-resolution render target and pixel expansion. Apparent sub-pixel motion between objects is possible because the low-resolution render target pixel size can be smaller while maintaining the same apparent level of pixelisation. Per-object pixel sizes are also supported.
+{% end %}
 
+You can enable or disable Pixel Expansion using the checkbox in the render feature. 
+
+### Performance
+
+Pixel Expansion requires an additional pass that is similar to an anti-aliasing pass; you can use it freely on PC and console, but be mindful on low-end mobile devices.
 Some performance guidelines for different platforms can be found below. Note that you can specify different render pipeline assets for different quality settings, so you can automatically build e.g. mobile or webGL with different ProPixelizer settings than PC or console.
 
-    Highest performance (android, iOS, webGL)
-
-        Full-screen pixelization filter, disable pixel expansion.
-
-    Highest fidelity (PC, consoles)
-
-        pixel expansion
+- **Highest performance** (android, iOS, webGL)
+    - Full-screen pixelization filter, disable pixel expansion, use virtual camera.
+- **Highest fidelity** (PC, consoles)
+    - Use pixel expansion

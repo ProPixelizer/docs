@@ -1,6 +1,6 @@
 +++
-title = "Quick Start"
-description = "Quick Start"
+title = "Setup"
+description = "Setup"
 weight = 2
 date= 2024-10-19
 +++

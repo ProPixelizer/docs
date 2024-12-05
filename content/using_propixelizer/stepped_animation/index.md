@@ -1,6 +1,6 @@
 +++
 title = "Stepped Animation Tools"
-weight = 11
+weight = 101
 +++
 
 Traditional pixel-art games used hand-drawn sprite sheets, and characters were animated by changing which sprite was displayed - the result was like a 'flipbook', with a few well defined poses. For instance, the cycle for a run animation could be ~5 frames long. 3D animations, on the other hand, commonly interpolate between key frames to produce smooth movement.

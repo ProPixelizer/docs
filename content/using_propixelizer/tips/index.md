@@ -1,6 +1,6 @@
 +++
 title = "General Tips"
-weight = 12
+weight = 200
 +++
 
 Below are a collection of tips to bear in mind when using ProPixelizer:
@@ -10,4 +10,4 @@ Below are a collection of tips to bear in mind when using ProPixelizer:
 - Old school sprite art typically only has a few different viewing angles; snap the angles of your objects to achieve the same feel.
 - Reduce the number of keyframes in animation and use 'constant' interpolation to give it a stepped feel, as if flicking through pages of a sprite sheet.
 - When using Color Grading, it helps to create your assets while targeting a particular color palette. There are significant differences between the various old-school color palettes. GameBoy is monochrome, for instance, while PAL is dark and grungy.
-- Rememberthat you can also do neat things not normally seen in pixel art games, such as depth-of-field post processing, procedural animations, etc.
+- Remember that you can also do neat things not normally seen in pixel art games, such as depth-of-field post processing, procedural animations, etc.

@@ -1,6 +1,6 @@
 +++
 title = "Dither patterns and color palettes"
-weight = 2
+weight = 100
 +++
 
 
