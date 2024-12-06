@@ -15,8 +15,8 @@ If you need help please do contact me for support:
 - via email, elliot.bentine@gmail.com
 - via discord DMs (username: elliotb256) or via the ProPixelizer server.
 
-> I hope you enjoy using ProPixelizer, and I'm always very pleased to hear what you make with it!
-> 
-> Cheers,
-> 
-> Elliot
+I hope you enjoy using ProPixelizer, and I'm always very pleased to hear what you make with it!
+
+Cheers!
+
+Elliot
