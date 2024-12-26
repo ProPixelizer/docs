@@ -1,6 +1,7 @@
 +++
 title = "ShaderGraph Support"
 weight = 6
+slug = "shadergraph"
 +++
 
 Do you want to make your own shaders using ProPixelizer? No problem! ProPixelizer v2.0 introduces the `ProPixelizer SubTarget` for ShaderGraph, which lets you author your own pixelated shaders easily within ShaderGraph. You use the SubTarget the same as a URP Lit master node; simply add your surface inputs, and ProPixelizer will handle all pixelisation, dithering, outlining, cel shading and color grading for you.
