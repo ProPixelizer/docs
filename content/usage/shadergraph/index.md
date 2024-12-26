@@ -25,6 +25,8 @@ ProPixelizer will automatically add the required material properties, rendering 
 
 When creating your own graphs, **the only requirement is that you include the ProPixelizer SG Alpha node**, as in the example below.
 
+![Required node](required.png)
+
 ## Example: Uber Shader
 
 For an example, let's take a look at the `ProPixelizerUberShader`, which is located at `ProPixelizer/ShaderGraph`.
