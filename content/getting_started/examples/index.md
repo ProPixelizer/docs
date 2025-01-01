@@ -5,7 +5,13 @@ date= 2024-10-19
 +++
 
 ProPixelizer comes with a number of example scenes to showcase features and show you how to use the package, which can be found in the `ProPixelizer/ExampleAssets` folder.
+These can be added to your project via Unity's Package Manager.
+From `Packages: in project`, select the ProPixelizer package, click the Samples tab and then 'import'.
+
+![Example of how to install samples](how_to_install.png)
+
 Each example scene also contains a 'readme' in the scene heirachy, which you can inspect to find out more information or further suggestions.
+The examples are described below.
 
 {% example_showcase(name = "Simple", image="simple.png") %}
 A simple scene showing a few different ProPixelizer materials. If you see this scene correctly, you've successfully installed ProPixelizer! 
