@@ -13,12 +13,18 @@ weight = 10
 - **Added** depth testing to normal-derived edges (e.g. to reveal steps)
 - **Added** Automatic rescaling to preserve world-space pixel size when zooming.
 - **Added** Automatic rescaling to preserve world-space pixel size when changing screen resolution.
-- **Added** ProPixelizer SubTarget for ShaderGraph (for advanced users).
+- **Added** ProPixelizer SubTarget for ShaderGraph - use it like a lit shadergraph, all pixelisation/dithering/color grading/cel shading/outlines are handled for you. Provides per-pixel control over outlines.
+- **Added** Support for Forward+ rendering path.
+- **Added** Support for Baked lighting.
+- **Added** Support for Mixed lighting.
+- **Added** Support for GPU Instancing.
+- **Added** Support for Hybrid renderer.
+- **Added** HDR Support for emissive lighting.
 - **Added** 'Bevel' edge highlight option (where edges use average surrounding normal for lighting).
 - **Added** Automatic world-space pixel alignment of static and unmoving objects.
 - **Added** Screen resolution movement for low res targets ('camera subpixel motion').
 - **Added** Lots of new example content and notes, showing you how to get the most out of ProPixelizer!
-- **Added** Support for Forward+ rendering path.
+
 - **New Documentation** rewritten from scratch using Zola.
 - Reduced the number of material keywords and changed some to shader_feature_local, which should give faster compile times.
 - **Fixed** Depth buffer post-processing effects in 2022.
