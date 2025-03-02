@@ -49,6 +49,6 @@ ProPixelizer uses the same `.meta` files for all assets and source files between
 You have now configured your project for ProPixelizer.
 The [example scenes](../examples) show you lots of interesting things you can do with ProPixelizer, and showcase various features of the plugin, so I recommend taking a look!
 
-I hope you enjoy using ProPixelizer. If you have any issues, please do email me (elliot.bentine@gmail.com) or add me on Discord (elliotb256) and I will do my best to help.
+I hope you enjoy using ProPixelizer. If you have any issues, please do email me (elliot.bentine@gmail.com), add me on Discord (elliotb256), or contact via the Discord server (see icon in the nav bar) and I will do my best to help.
 
 
