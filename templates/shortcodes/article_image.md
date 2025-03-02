@@ -5,5 +5,6 @@
 {% set image = resize_image(path=page.colocated_path ~ image, height=600, width=600, op="fit") %}
 <img src="{{ image.url }}" />
 {% endif %}
-<div><b>Above: </b>{{ body }}</div>
+
+<div>{% if title %}<b>{{ title }}: </b>{% else %}<b>Above: </b>{% endif %}{{ body }}</div>
 </div>

@@ -6,8 +6,12 @@ date= 2024-10-19
 
 ## Updating to v2.0
 
-- Version 2.0 adds a lot of new features, and much of the package has been rewritten. Despite this, you shouldn't need to make any changes to your project!
-- PixelizedWithOutline is functional, but deprecated. I now recommend using the **UberShader**; it does all the same things but also supports more functionality like the DOTS renderer and GPU instancing.
+- Please delete the old install from your projects `Assets` folder before importing the new version. A modal window will warn you that import failed if you do not. ProPixelizer has now moved to the Packages folder.
+- Version 2.0 adds a lot of new features, and much of the package has been rewritten. Despite this, you shouldn't need to make any changes to your project! I have maintained asset GUIDs, so Unity will automatically incorporate the new versions of any files into your project, even if they have been renamed.
+- If you were using the ProPixelizer Render Pipeline Asset, you will find it is now included in the package samples, and so you'll need to import the samples into your project to continue using it.
+- There are _many_ new features. The sample scenes give different examples of these; they all contain `readme`s in the scene heirachy with detailed further information. I strongly recommend that you import these scenes and look through them to understand what ProPixelizer can now do.
+- PixelizedWithOutline is now deprecated and you should use the **UberShader** as a replacement; it does all the same things, but supports additional functionality like the DOTS renderer and GPU instancing. If you want to update your materials, you can do this easily using a button on the material inspector.
+- Given the changes to the rendering API in Unity 6 (RenderGraph), I had to drop support for some of the legacy editors to focus efforts on newer features. This version drops support for 2020 and 2021, but maintains support for 2022 LTS. _All previous versions of ProPixelizer are available on the ProPixelizer git repository, contact me if you would like access and I will gladly assist._
 
 ## Updating to v1.8
 

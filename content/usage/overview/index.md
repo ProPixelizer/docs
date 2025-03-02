@@ -5,7 +5,7 @@ weight = 1
 
 The ProPixelizer package includes a number of things to achieve perfect pixelisation in your game.
 
-- A [ProPixelizerUberShader](@/technical_details/ubershader/index.md) which provides control over pixelisation, color grading, outlines, cel shading and more.
+- A [ProPixelizerUberShader](@/technical/ubershader/index.md) which provides control over pixelisation, color grading, outlines, cel shading and more.
 - A [ShaderGraph SubTarget](@/usage/shadergraph/index.md) and examples if you want to create your own shaders.
 - The [ProPixelizerCamera](@/usage/camera_setup/index.md) MonoBehavior for controlling ProPixelizer's pixelisation.
 - Easy methods to [Remove Pixel Creep](@/usage/eliminate_pixel_creep/index.md) to create crisp looking 3D pixel art.
