@@ -18,3 +18,9 @@ The `Object Render Snapable` MonoBehavior allows the position of objects to be s
 
 ### Pixel Alignment
 
+- `Align Pixel Grid`: whether to align an object's macropixels to the given  `Pixel Grid Reference` when applying snapping. This can be used to prevent sub-pixel relative motion between two objects (for more detail on aligning pixel grids, see [here](@/usage/eliminate_pixel_creep/index.md)). This setting is only required if you are using [pixel expansion](@/usage/pixelization/index.md)
+- `Alignment Pixel Size`: The size of the macropixel used when snapping an object's position with respect to the given `Pixel Grid Reference`. Normally, you want this property to be equal to your ProPixelizer material pixel size. When `Get Pixel Size From Material` is enabled, this property will be set automatically  by getting the `Pixel size` property from a ProPixelizer material on the object.
+
+### Materials
+
+- `Configure Children`: When true, sets the material keywords required for snapping on all child meshes of this transform.

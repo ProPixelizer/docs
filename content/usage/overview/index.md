@@ -13,7 +13,8 @@ The ProPixelizer package includes a number of things to achieve perfect pixelisa
 
 If you need help please do contact me for support:
 - via email, elliot.bentine@gmail.com
-- via discord DMs (username: elliotb256) or via the ProPixelizer server.
+- via discord DMs (username: elliotb256)
+- via the ProPixelizer server (click the icon in the nav bar to join).
 
 I hope you enjoy using ProPixelizer, and I'm always very pleased to hear what you make with it!
 
