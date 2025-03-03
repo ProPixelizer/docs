@@ -51,6 +51,6 @@ Pixel Expansion requires an additional pass that is similar to an anti-aliasing 
 Some performance guidelines for different platforms can be found below. Note that you can specify different render pipeline assets for different quality settings, so you can automatically build e.g. mobile or webGL with different ProPixelizer settings than PC or console.
 
 - **Highest performance** (android, iOS, webGL)
-    - Full-screen pixelization filter, disable pixel expansion, use virtual camera.
+    - Full-screen pixelization filter, disable `Use Pixel Expansion`, use virtual camera.
 - **Highest fidelity** (PC, consoles)
-    - Use pixel expansion
+    - Enable `Use pixel expansion` if smooth movement is desired.
