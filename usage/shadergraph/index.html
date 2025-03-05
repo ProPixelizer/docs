@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://propixelizer.github.io/docs/main.css">
+    <link rel="icon" href="https://propixelizer.github.io/docs/propixelizer.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> ProPixelizer | ShaderGraph Support </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <div class="title-box">
+                <a href="https:&#x2F;&#x2F;propixelizer.github.io&#x2F;docs">
+                            <img src="https://propixelizer.github.io/docs/head.png" alt="logo" class="header-img"/>
+                        </a>
+                    <h1><a href="https:&#x2F;&#x2F;propixelizer.github.io&#x2F;docs">ProPixelizer</a></h1>
+            </div>
+
+
+            <div id="nav-release-links">
+                <div id="release">2.0.1</div>
+                <div class="growable"></div>
+                <div id="nav-link-widget">
+                    <a href="https://discord.gg/Xdjp8Qs43Y"><img class="link-icon" src="https://propixelizer.github.io/docs/discord.png" alt="discord"/></a>
+                </div>
+            </div>
+
+            <a href="javascript:void(0);" onclick="burger()" id="mobile" class="ms-Icon--GlobalNavButton"></a>
+            <div id="trees">
+                
+                        <a href="https:&#x2F;&#x2F;propixelizer.github.io&#x2F;docs&#x2F;welcome&#x2F;" >Welcome</a> 
+                    
+
+                    <ul class="subtree">
+                        </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="installation"
+                            />
+                        <label class="tree-toggle-label"
+                            for="installation">Installation</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/getting_started/requirements/">Requirements</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/getting_started/quickstart/">Setup or Upgrade</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/getting_started/examples/">Examples</a>
+                            </li>
+
+                            </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="using-propixelizer"
+                            checked/>
+                        <label class="tree-toggle-label"
+                            for="using-propixelizer">Using ProPixelizer</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/usage/overview/">Overview</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/camera-setup/">Camera setup</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/pixelization/">Pixelisation Controls</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/outlines/">Edges and Outlines</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://propixelizer.github.io/docs/usage/shadergraph/">ShaderGraph Support</a>
+                            </li>
+
+                            
+                                    
+                                    
+                                        <ul id="toc">
+                                            <li><a href="
+                                                        https://propixelizer.github.io/docs/usage/shadergraph/#using-the-subtarget">Using the SubTarget</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://propixelizer.github.io/docs/usage/shadergraph/#example-uber-shader">Example: Uber Shader</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://propixelizer.github.io/docs/usage/shadergraph/#example-animated-dashed-outline">Example: Animated dashed outline</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://propixelizer.github.io/docs/usage/shadergraph/#example-prismatic-outline">Example: Prismatic outline</a>
+                                                    </li>
+                                            <li><a href="
+                                                        https://propixelizer.github.io/docs/usage/shadergraph/#example-world-space-chips-in-bevel-edges">Example: World-space &#x27;chips&#x27; in bevel edges</a>
+                                                    </li>
+                                            </ul>
+                                    <li >
+                                <a href="https://propixelizer.github.io/docs/usage/eliminate-pixel-creep/">Eliminating Pixel Creep</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/palette-tools/">Dither patterns and color palettes</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/stepped-animation/">Stepped Animation Tools</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/tips/">General Tips</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/faq/">FAQ</a>
+                            </li>
+
+                            </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="technical-reference"
+                            />
+                        <label class="tree-toggle-label"
+                            for="technical-reference">Technical Reference</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/technical/render-feature/">ProPixelizer Render Feature</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/technical/propixelizer-camera/">ProPixelizer Camera</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/technical/ubershader/">Uber Shader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/technical/objectrendersnapable/">Object Render Snapable</a>
+                            </li>
+
+                            </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="versions"
+                            />
+                        <label class="tree-toggle-label"
+                            for="versions">Versions</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/versions/updating-from-prev/">Updating from previous versions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/versions/changelog/">Version History</a>
+                            </li>
+
+                            </ul>
+                
+                        <a href="https:&#x2F;&#x2F;propixelizer.github.io&#x2F;docs&#x2F;tips_and_tricks&#x2F;" >Tips and tricks</a> 
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/tips_and_tricks/artefacts/">Common artefacts</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+        <div id="article-title-bar">
+            <h1 class="page-title"> ShaderGraph Support </h1>
+        </div>
+        
+        <div id="search-pane">
+            <div id="on_right">
+                <span id="search-ico" class="ms-Icon--Search"></span>
+            </div>
+            <div class="search-container">
+                <input id="search" type="search" placeholder="Search as you type...">
+                <div class="search-results">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="article-content">
+            
+        <p>Do you want to make your own shaders using ProPixelizer? No problem! ProPixelizer v2.0 introduces the <code>ProPixelizer SubTarget</code> for ShaderGraph, which lets you author your own pixelated shaders easily within ShaderGraph. You use the SubTarget the same as a URP Lit master node; simply add your surface inputs, and ProPixelizer will handle all pixelisation, dithering, outlining, cel shading and color grading for you.</p>
+<p>For more advanced users, the ProPixelizer SubTarget also supports:</p>
+<ul>
+<li>GPU Instancing</li>
+<li>the Hybrid Renderer used by Unity's ECS</li>
+<li>Custom properties</li>
+</ul>
+<p>The SubTarget also supports per-pixel outline colors; this lets you do cool things like animated dashed outlines, as shown in the examples below.</p>
+<h2 id="using-the-subtarget">Using the SubTarget&nbsp;<a class="anchor" href="#using-the-subtarget">&#xE732;</a></h2>
+<p>You can configure a ShaderGraph to use the ProPixelizer SubTarget by using the option in the Graph Inspector dialogue from within the ShaderGraph editor.</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/subtarget.png" alt="Subtarget Configuration" /></p>
+<p>ProPixelizer will automatically add the required material properties, rendering instructions and passes to your shader.</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/subtarget_props.png" alt="SubTarget properties" /></p>
+<p>When creating your own graphs, <strong>the only requirement is that you include the ProPixelizer SG Alpha node</strong>, as in the example below.</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/required.png" alt="Required node" /></p>
+<h2 id="example-uber-shader">Example: Uber Shader&nbsp;<a class="anchor" href="#example-uber-shader">&#xE732;</a></h2>
+<p>For an example, let's take a look at the <code>ProPixelizerUberShader</code>, which is located at <code>ProPixelizer/ShaderGraph</code>.</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/uber.png" alt="Uber ShaderGraph View" /></p>
+<p>There are two main calculations going on here to determine (i) a lit color, which will receive light; and (ii) an emission color, which is independent of light in the scene.</p>
+<ul>
+<li>The lit color uses the <code>DiffuseVertexcolorWeight</code> float parameter to blend between either white or the model's <code>Vertex color</code>. The result is multiplied by the <code>color</code> property to tint it, and then multiplied again by the <code>Albedo</code> texture. This is fed into the <code>Base color</code> input of the SubTarget.</li>
+<li>The emission color is similar. We use the <code>EmissiveVertexcolorWeight</code> float parameter to blend between white or the model's <code>Vertex color</code>. The result is multiplied by the <code>Emissioncolor</code>, and then multiplied by the <code>Emission</code> texture. This is fed into the <code>Emission</code> input of the SubTarget.</li>
+</ul>
+<h2 id="example-animated-dashed-outline">Example: Animated dashed outline&nbsp;<a class="anchor" href="#example-animated-dashed-outline">&#xE732;</a></h2>
+<p><em>This example can be found in the Example Assets, under <code>ShaderGraph</code>.</em></p>
+<p>As mentioned above, the ProPixelizer SubTarget also gives you <em>per pixel</em> control over edges and outlines. In the following example, we use this to create an animated dashed outline - the sort you might have to indicate a unit is selected in an RTS, for instance.</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/dashed.gif" alt="Dashed" /></p>
+<p>To create the outline, we take the screen position <code>x</code> and <code>y</code>, multiply them by a constant (to control the line width) and add the results together to give a single number that increases from the bottom left to the top right of the screen. We add <code>time</code> to make this number scroll, and use <code>modulo</code> to wrap the increasing numbers over the range <code>[0,1]</code>. A <code>step</code> changes this sawtooth pattern into stripes, which we then use as the input to lerp between two colors for our outline. The final color is fed into the <code>ProPixelizer Outline</code> input of the SubTarget.</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/dashed_sg.png" alt="Dashed SG" /></p>
+<p>Note that the screenshot above uses color grading, and so the outline color is coerced onto the closest matching color from the color palette. If color palette is disabled, the output looks like the below. Color palettes offer a really neat way to quickly change the look and feel of a project!</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/dashed_nocp.png" alt="Dashed No colour palette" /></p>
+<h2 id="example-prismatic-outline">Example: Prismatic outline&nbsp;<a class="anchor" href="#example-prismatic-outline">&#xE732;</a></h2>
+<p>Let's create a multi-colored outline:</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/prismatic.png" alt="Prismatic" /></p>
+<p>We use the screen coordinates to sample a noise texture, and pass the resulting values into the red and green color channels to create a colorful noisy pattern. Then we plug this color into the <code>ProPixelizer Outline</code> color input of the SubTarget.</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/prismatic_sg.png" alt="Prismatic SG" /></p>
+<p>Perhaps you could use this to highlight a particularly rare item in your game?</p>
+<h2 id="example-world-space-chips-in-bevel-edges">Example: World-space 'chips' in bevel edges&nbsp;<a class="anchor" href="#example-world-space-chips-in-bevel-edges">&#xE732;</a></h2>
+<p><em>This example can be found in the Example Assets, under <code>ShaderGraph</code>.</em></p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/chipped.png" alt="Chipped" /></p>
+<p>Now let's imagine that we have some old stone ruins, and we want the blocks to be chipped and weathered. We <em>could</em>  model this directly in the 3D model, but that makes it difficult to rescale the features (and small features are hard to reliably render when using 3D to pixel art workflows). Furthermore, we want some variation between assets so that each block looks unique.</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/chipped_sg.png" alt="Chipped" /></p>
+<p>We first take the world space position and combine the <code>x</code>, <code>y</code>, <code>z</code> coordinates to create a UV coordinate that we can use to sample the Simple Noise and Voronoi nodes. Multiplying the results gives us a noisy pattern with hard edges that is spread across the world. We apply a step function to the result, creating faceted black and white areas:</p>
+<p><img src="https://propixelizer.github.io/docs/usage/shadergraph/chip_pattern.png" alt="Chip pattern" /></p>
+<p>We plug this chip pattern into the <code>ProPixelizer Bevel Weight</code> input; this enables the bevel when the chip pattern is white, and disables it where the chip pattern is black. This creates world-space chips in our otherwise perfect 1px bevel lines. We also dilute the chip pattern and direct it to the color node, so that strong weathering will produce a discoloration across the faces that will line up with the bevel chips.</p>
+
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://propixelizer.github.io/docs/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://propixelizer.github.io/docs/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://propixelizer.github.io/docs/js.js" defer></script>
+
+</body>
+</html>
