@@ -24,7 +24,6 @@ weight = 10
 - **Added** Automatic world-space pixel alignment of static and unmoving objects.
 - **Added** Screen resolution movement for low res targets ('camera subpixel motion').
 - **Added** Lots of new example content and notes, showing you how to get the most out of ProPixelizer!
-
 - **New Documentation** rewritten from scratch using Zola.
 - Reduced the number of material keywords and changed some to shader_feature_local, which should give faster compile times.
 - **Fixed** Depth buffer post-processing effects in 2022.
