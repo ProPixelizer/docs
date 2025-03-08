@@ -57,8 +57,6 @@ A Moiré pattern can occur when dithered objects are drawn one on texture, which
 Rescaling the low-resolution render to match the screen has resulted in a visually distracting Moiré pattern. The red box highlights one element of the repeating pattern.
 {% end %}
 
-The issue is particularly bad whenever 
-
 ### How to fix it?
 
 There are two different approaches you can take to fix this:
