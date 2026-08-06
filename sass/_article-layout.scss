@@ -1,0 +1,77 @@
+article {
+  --article-reading-width: 52rem;
+  --article-code-width: 64rem;
+  --article-wide-width: 70rem;
+}
+
+#article-title-bar .page-title {
+  max-width: var(--article-reading-width);
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#article-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: calc(var(--article-wide-width) + 3rem);
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+
+#article-content > :where(
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  dl,
+  blockquote,
+  hr
+) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--article-reading-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#article-content > pre {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--article-code-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#article-content > :where(table, figure, .article-image, .examples-page),
+#article-content > p:has(> img) {
+  max-width: var(--article-wide-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#article-content > p:has(> img) {
+  text-align: center;
+}
+
+#article-content > img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#article-content > .article-image {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  #article-content {
+    margin-bottom: 2rem;
+    padding: 0 0.75rem;
+  }
+}

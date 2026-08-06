@@ -25,4 +25,4 @@ bottom_footnotes = false
 easydocs_heading_threshold = 1
 logo = "head.png"
 favicon = "propixelizer.ico"
-package_version = "2.0.1"
+package_version = "2.0.2"

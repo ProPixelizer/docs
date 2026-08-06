@@ -3,7 +3,7 @@ title = "Version History"
 weight = 10
 +++
 
-## Version 2.0
+## Version 2.0.2
 
 _Version 2.0 is a substantial rewrite of ProPixelizer to include support for both rendergraph and non-rendergraph rendering pathways. It also adds lots of new features and bug fixes._
 
@@ -33,7 +33,7 @@ _Version 2.0 is a substantial rewrite of ProPixelizer to include support for bot
 - **Added** Automatic world-space pixel alignment of static and unmoving objects.
 - **Added** Screen resolution movement for low res targets ('camera subpixel motion').
 - **Added** Lots of new example content and notes, showing you how to get the most out of ProPixelizer!
-- **New Documentation** rewritten from scratch using Zola.
+- **New Documentation** rewritten using Zola.
 - Reduced the number of material keywords and changed some to shader_feature_local, which should give faster compile times.
 - **Fixed** Depth buffer post-processing effects in 2022.
 - **Fixed** greatly improved the edge detection kernels to give 1px edges more reliably.
@@ -41,6 +41,7 @@ _Version 2.0 is a substantial rewrite of ProPixelizer to include support for bot
 - **Fixed** Fog not affecting ProPixelizer materials.
 - **Fixed** pixel size=3 draw bug on SteamDeck + Vulkan.
 - **Fixed** Absolutely no allocations during render.
+- **Moved** to `Packages/`; please delete the old package in Assets/ when installing.
 
 ## Version 1.8.1
 
