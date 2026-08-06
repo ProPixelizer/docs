@@ -1,13 +1,15 @@
 +++
-title = "Setup or Upgrade"
-description = "Setup or Upgrade"
+title = "Setup"
+description = "Setup"
 weight = 2
 date= 2024-10-19
 +++
 
 Welcome to ProPixelizer, let's get started!
 
-## Setting up a new project
+{{ article_toc() }}
+
+## First-time install
 
 Make sure you have the Universal Render Pipeline package added to the project (if not, you can add this using the Unity Package Manager). 
 
@@ -38,11 +40,13 @@ You can now add ProPixelizer to each Render Pipeline Asset that you are using.
 
 ![example renderer](renderer.png)
 
-## Upgrading from an older version
+## Upgrading an older version of ProPixelizer
 
 If your project is already using a previous version of ProPixelizer which was imported into your Project's `Assets` folder, **please delete this old version first** and then import the new version using the Unity Package Manager. The new version will be installed to `Packages/ProPixelizer`.
 
-ProPixelizer uses the same `.meta` files for all assets and source files between versions and so your project will automatically use the updated scripts, Monobehaviors and assets from the new package version. For more detailed update notes and version history, see the [changelog](@/versions/changelog/index.md) and [update guide](@/versions/updating_from_prev/index.md).
+ProPixelizer uses the same `.meta` files for all assets and source files between versions and so your project will automatically use the updated scripts, Monobehaviors and assets from the new package version. ProPixelizer materials will automatically detect if updates are required.
+
+ For more detailed update notes and version history, see the [changelog](@/versions/changelog/index.md) and [update guide](@/versions/updating_from_prev/index.md).
 
 ## Check out the examples!
 

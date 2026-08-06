@@ -5,6 +5,8 @@ weight = 4
 
 Good edges and outlines are a key ingredient of pixel art; they help accentuate small details and can be used to bring depth to areas of otherwise featureless 'flat' shading.ProPixelizer supports three different types of lines as described here.
 
+{{ article_toc() }}
+
 {% article_image(image="outlines_and_edges.png", title="Outline and edge types") %}
 The three line types are (<i>left</i>) outlines, (<i>middle</i>) edge highlights, and (<i>right</i>) bevels.
 {% end %}

@@ -1,0 +1,76 @@
+.article-toc {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: var(--article-reading-width);
+  margin: 1.5rem auto 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #d7ded5;
+  border-left: 4px solid #338333;
+  border-radius: 0.5rem;
+  background: #f4f7f3;
+}
+
+.article-toc__list,
+.article-toc__sublist {
+  padding: 0;
+  list-style: none;
+}
+
+.article-toc__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.4rem 1.5rem;
+  margin: 0;
+}
+
+.article-toc__list > li {
+  min-width: 0;
+}
+
+.article-toc__list a,
+.article-toc__list a:visited {
+  color: #225f22;
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.article-toc__list a:hover {
+  color: #338333;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.article-toc__list a:focus-visible {
+  border-radius: 0.15rem;
+  outline: 3px solid rgba(51, 131, 51, 0.24);
+  outline-offset: 2px;
+}
+
+.article-toc__sublist {
+  margin: 0.3rem 0 0 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid #cbd6c8;
+}
+
+.article-toc__sublist li + li {
+  margin-top: 0.25rem;
+}
+
+.article-toc__sublist a,
+.article-toc__sublist a:visited {
+  color: #4d664b;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+#article-content :where(h2, h3, h4, h5, h6) {
+  scroll-margin-top: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .article-toc {
+    margin-top: 1rem;
+    padding: 0.9rem 1rem;
+  }
+}

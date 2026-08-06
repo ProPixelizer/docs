@@ -4,6 +4,8 @@ weight = 3
 date= 2024-10-19
 +++
 
+_NB: Version compatibility across different unity versions can be seen [here](@/getting_started/requirements.md)._
+
 ## Updating to v2.0
 
 - Please delete the old install from your projects `Assets` folder before importing the new version. A modal window will warn you that import failed if you do not. ProPixelizer has now moved to the Packages folder.

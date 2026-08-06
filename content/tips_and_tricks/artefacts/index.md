@@ -6,6 +6,8 @@ weight = 50
 
 Pixel art is a popular art style, but also highly perfectionist! Even a few small errors can greatly degrade the appearance of good pixel art. Here, I describe some common artefacts that occur when using 3d objects to create pixel art, and what you can do to fix them.
 
+{{ article_toc() }}
+
 ## Creep
 
 Creep is the most well-known 3D pixel art artefact. Visually, the object appears to change shape and form as it moves relative to the camera. This can occur due to object movement, or for stationary objects because the camera is moving. The underlying cause is because the object is rasterized differently to the screen each time, resulting in an inconsistent set of pixels being drawn, which is most commonly due to sub-pixel motion of the object. The result is a visually distracting artefact, which is particularly noticeable in outlines.
@@ -14,7 +16,7 @@ Creep is the most well-known 3D pixel art artefact. Visually, the object appears
 The object's pixel composition appears to change, creating a visually distracting artefact.
 {% end %}
 
-### How to fix it?
+**How to fix it?**
 
 ProPixelizer provides functionality for correctly handling sub-pixel relative object motion as described in [this section](@/usage/eliminate_pixel_creep/index.md).
 
@@ -30,11 +32,11 @@ A hallmark of pixel art is clean edges, with straight lines parallel to the hori
 An otherwise perfect 2x1 edge staircase is interrupted by the presence of a 1x1 pixel.
 {% end %}
 
-### How to fix it?
-
 {% article_image(image="staircase.png", title="Fixed") %}
 Fixing the camera rotation aligns the edges of the object correctly to allow perfect staircases to be rendered. <i>ProPixelizer's edge detection kernels are optimised to give you correct staircases.</i>
 {% end %}
+
+**How to fix it?** 
 
 Check that you are using the correct projection for your orthographic camera. The easiest way to debug this is to place a cube in the scene directly in front of your camera. The camera should be first rotated 45 degrees about the vertical, and then tilted 30 degrees below horizontal (for example, use a rotation value in the transform of `(30, 45, 0)`, as in the ProPixelizer example scenes). The edges of your cube will then be pointing in a direction with a ratio of 2 pixels up/down for every one pixel across.
 
@@ -57,7 +59,7 @@ A Moiré pattern can occur when dithered objects are drawn one on texture, which
 Rescaling the low-resolution render to match the screen has resulted in a visually distracting Moiré pattern. The red box highlights one element of the repeating pattern.
 {% end %}
 
-### How to fix it?
+**How to fix it?**
 
 There are two different approaches you can take to fix this:
 

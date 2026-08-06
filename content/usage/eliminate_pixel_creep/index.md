@@ -4,7 +4,13 @@ description = "Eliminating Pixel Creep"
 weight = 10
 +++
 
+
+
 Pixel creep is a problem that occurs frequently when rendering 3D objects as pixel art - the object appears to shimmer as it moves across the screen. An example can be seen in this video: https://www.youtube.com/watch?v=lO8O5tY-wZI . The creep occurs because both the number of pixels that an object occludes, and the alignment of the object with respect to the pixels, changes as it moves across the screen.
+
+{{ article_toc() }}
+
+## Fixing creep
 
 Pixel creep can be removed by aligning objects to the pixels of the screen before rendering them. Pixel creep can only ever be solved for orthographic projections; in a perspective projection, the object size changes as it moves on the screen.
 
@@ -15,7 +21,6 @@ For orthographic projections, ProPixelizer provides functionality to handle this
 - The `ObjectRenderSnapable` MonoBehaviour, attached to moving objects that you are rendering.
 
 These MonoBehaviours will snap object positions before rendering and restore them afterwards. The implementation respects transform hierarchies.
-
 
 ## Snapping angles
 

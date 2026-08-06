@@ -3,13 +3,11 @@ title = "Dither patterns and color palettes"
 weight = 100
 +++
 
-
-## Palettes and Dither Patterns
-
 Many old games used reduced color palettes, often due to hardware limitations! For example, the original GameBoy could only display 4 different brightness values, and the SNES could only display 256 colors at once. Games sometimes employed dithering to emulate an increased color depth.
 
 ProPixelizer gives you a set of tools to create reduced color palettes and dither patterns. Both are combined into a texture Look-Up Table (LUT) which is sampled when rendering the object to color grade with minimal overhead.
 
+{{ article_toc() }}
 
 ## Dither patterns
 

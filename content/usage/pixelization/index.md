@@ -7,6 +7,8 @@ My goal with ProPixelizer is to provide you with ways to produce really good-loo
 
 Starting from v2.0, ProPixelizer provides a number of different methods and options for controlling pixelization, as discussed below.
 
+{{ article_toc() }}
+
 ## Low-resolution Render Target
 
 The most common technique used to pixelize 3D scenes is to render them at a resolution lower than the screen, then increase their scale using nearest/point filtering to retain 'crisp' pixels. There are numerous tutorials and assets that use this technique in Unity. In ProPixelizer v2.0, a low-resolution render target is used for some or all of the pixelation, depending on your settings.

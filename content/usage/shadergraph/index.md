@@ -13,6 +13,8 @@ For more advanced users, the ProPixelizer SubTarget also supports:
 
 The SubTarget also supports per-pixel outline colors; this lets you do cool things like animated dashed outlines, as shown in the examples below.
 
+{{ article_toc() }}
+
 ## Using the SubTarget
 
 You can configure a ShaderGraph to use the ProPixelizer SubTarget by using the option in the Graph Inspector dialogue from within the ShaderGraph editor.
