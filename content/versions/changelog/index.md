@@ -5,6 +5,8 @@ weight = 10
 
 ## Version 2.0
 
+_Version 2.0 is a substantial rewrite of ProPixelizer to include support for both rendergraph and non-rendergraph rendering pathways. It also adds lots of new features and bug fixes._
+
 - **Added** Low-res render target mode.
 - **Added** Hybrid low-res render target mode.
 - **Added** Full screen pixelisation mode.
@@ -14,12 +16,19 @@ weight = 10
 - **Added** Automatic rescaling to preserve world-space pixel size when zooming.
 - **Added** Automatic rescaling to preserve world-space pixel size when changing screen resolution.
 - **Added** ProPixelizer SubTarget for ShaderGraph - use it like a lit shadergraph, all pixelisation/dithering/color grading/cel shading/outlines are handled for you. Provides per-pixel control over outlines.
+- **Added** Uber shader, a new drop-in replacement for PixelizedWithOutline.
+- **Added** Metallic and Specular workflows
+- **Added** Fine tuning controls for lighting strength.
 - **Added** Support for Forward+ rendering path.
 - **Added** Support for Baked lighting.
 - **Added** Support for Mixed lighting.
+- **Added** Shadow tint color controls.
 - **Added** Support for GPU Instancing.
+- **Added** Better HDR emissive lighting.
 - **Added** Support for Hybrid renderer.
 - **Added** HDR Support for emissive lighting.
+- **Added** Support for decals.
+- **Added** Optional 'subcamera' mode as an alternative to ProPixelizer's 'virtual' camera mode.
 - **Added** 'Bevel' edge highlight option (where edges use average surrounding normal for lighting).
 - **Added** Automatic world-space pixel alignment of static and unmoving objects.
 - **Added** Screen resolution movement for low res targets ('camera subpixel motion').
@@ -28,9 +37,10 @@ weight = 10
 - Reduced the number of material keywords and changed some to shader_feature_local, which should give faster compile times.
 - **Fixed** Depth buffer post-processing effects in 2022.
 - **Fixed** greatly improved the edge detection kernels to give 1px edges more reliably.
-- Renamed ProPixelizer material properties to match Universal Lit convention (run Window > ProPixelizer > Update and Verify Materials)
-
-_Version 1.9 gradually evolved into a large enough update to warrant skipping to 2.0._
+- Renamed ProPixelizer material properties to match Universal Lit convention (run `Window > ProPixelizer > Update and Verify Materials`)
+- **Fixed** Fog not affecting ProPixelizer materials.
+- **Fixed** pixel size=3 draw bug on SteamDeck + Vulkan.
+- **Fixed** Absolutely no allocations during render.
 
 ## Version 1.8.1
 
