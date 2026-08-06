@@ -20,6 +20,10 @@ A simple scene showing a few different ProPixelizer materials. If you see this s
 Shows off the different edge and outline options in ProPixelizer.
 {% end %}
 
+{% example_showcase(name = "Full Screen", image="lapping.gif", gif=true) %} 
+Demonstrates full screen pixelization and color grading, alongside compatibility with URP post processing.
+{% end %}
+
 {% example_showcase(name = "World Space Pixel Size", image="worldspacepixelsize.gif", gif=true) %} 
 A scene that configures a camera to use pixel sizes defined in world-space units. ProPixelizer automatically handles render target scaling and sub-pixel camera movement for you to smoothly maintan the desired pixel size across different camera ortho-sizes and screen resolutions.
 {% end %}
