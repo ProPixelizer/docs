@@ -1,50 +1,65 @@
 +++
-title = "Examples"
+title = "See the examples"
 weight = 3
-date= 2024-10-19
+date = 2024-10-19
 +++
 
-ProPixelizer comes with a number of example scenes to showcase features and show you how to use the package, which can be imported into your project via Unity's Package Manager.
-From `Packages: in project`, select the ProPixelizer package, click `Samples` tab and then press 'import'.
+<div class="examples-page">
+  <p class="examples-intro">Here you can explore the sample scenes included with ProPixelizer. Each one focuses on a practical technique you can inspect, adapt, and use in your own Unity project.</p>
 
-![Example of how to install samples](how_to_install.png)
+  <aside class="examples-import-callout" aria-label="Import information">
+    <p>These samples are <strong>included with ProPixelizer,</strong> you can import every scene from the Package Manager.</p>
+    <a href="#import-samples">View import steps ↓</a>
+  </aside>
 
-Each example scene also contains a 'readme' in the scene heirachy, which you can inspect to find out more information or further suggestions.
-The examples are described below.
+  <div class="examples-grid">
 
-{% example_showcase(name = "Simple", image="simple.png") %}
-A simple scene showing a few different ProPixelizer materials. If you see this scene correctly, you've successfully installed ProPixelizer! 
+{% example_showcase(name="Full Screen", image="fullscreen.gif", gif=true, featured=true, alt="Pixelated green scene demonstrating full-screen pixelization and color grading", link="usage/pixelization/") %}
+Applies pixelization and color grading to the whole camera. URP's postprocessing is used to give a feeling of depth.
 {% end %}
 
-{% example_showcase(name = "Edges and Outlines", image="edges.png") %} 
-Shows off the different edge and outline options in ProPixelizer.
+{% example_showcase(name="Simple", image="simple.png", alt="Two shaded pixel-art spheres from the Simple example scene", link="getting_started/quickstart/") %}
+A quick example to confirm your installation is correct.
 {% end %}
 
-{% example_showcase(name = "Full Screen", image="lapping.gif", gif=true) %} 
-Demonstrates full screen pixelization and color grading, alongside compatibility with URP post processing.
+{% example_showcase(name="Edges and Outlines", image="edges.png", alt="Pixel-art cubes showing different edge and outline treatments", link="usage/outlines/") %}
+Compare silhouette outlines, edge highlights and lit bevel edges.
 {% end %}
 
-{% example_showcase(name = "World Space Pixel Size", image="worldspacepixelsize.gif", gif=true) %} 
-A scene that configures a camera to use pixel sizes defined in world-space units. ProPixelizer automatically handles render target scaling and sub-pixel camera movement for you to smoothly maintan the desired pixel size across different camera ortho-sizes and screen resolutions.
+{% example_showcase(name="No Creep", image="nocreep.gif", gif=true, alt="Animated pixel-art shapes moving without pixel creep", link="usage/eliminate-pixel-creep/") %}
+Eliminate pixel creep from moving objects.
 {% end %}
 
-{% example_showcase(name = "No Creep", image="nocreep.gif", gif=true) %} 
-An example demonstrating how to use ProPixelizer to eliminate creep from moving objects.
+{% example_showcase(name="World Space Pixel Size", image="worldspacepixelsize.gif", gif=true, alt="Animated building maintaining a consistent world-space pixel size", link="technical/propixelizer-camera/") %}
+Maintain a consistent pixel size across different camera zooms and screen resolutions.
 {% end %}
 
-{% example_showcase(name = "Color Palettes", image="colorpalettes.png") %} 
-A scene that randomly changes material settings to show off a wide range of color palette and dither pattern styles. ProPixelizer contains tools for creating your own dither patterns and palettes.
+{% example_showcase(name="Color Palettes", image="colorpalettes.png", alt="Pixel-art objects using several palettes and dither patterns", link="usage/palette-tools/") %}
+Explore color palettes and dither patterns. ProPixelizer contains tools for creating your own dither patterns and palettes.
 {% end %}
 
-{% example_showcase(name = "Pixel Alignment", image="pixelalignment.png") %} 
-Shows you how to restrict sub-pixel relative motion between different objects - useful for aligning inventory items with characters, for example.
+{% example_showcase(name="Pixel Alignment", image="pixelalignment.png", alt="Two connected pixel-art cubes demonstrating pixel alignment", link="technical/objectrendersnapable/") %}
+Restrict sub-pixel motion between related objects, such as equipment attached to a character.
 {% end %}
 
-{% example_showcase(name = "Camera Stacking", image="camerastacking.png") %} 
-An example scene where ProPixelizer is applied to different cameras in a URP camera stack.
+{% example_showcase(name="Camera Stacking", image="camerastacking.png", alt="Several outlined pixel-art spheres rendered with stacked cameras", link="usage/camera-setup/") %}
+Apply ProPixelizer to different cameras within a URP camera stack.
 {% end %}
 
-{% example_showcase(name = "Multiple Lights", image="multiplelights.gif", gif=true) %} 
-Demonstrates the use of additional lights in a scene.
-_Note: you may need to enable additional lights and shadows in your Render Pipeline Asset._
+{% example_showcase(name="Multiple Lights", image="multiplelights.gif", gif=true, alt="Animated night scene illuminated by several lights", link="technical/render-feature/") %}
+ProPixelizer supports both Forward and Forward+ for virtually unlimited additional lights.
 {% end %}
+
+  </div>
+
+  <section class="examples-install-guide" id="import-samples">
+    <div>
+      <h2>Import the sample scenes</h2>
+      <p>In Unity's Package Manager, choose <code>Packages: In Project</code>, select <code>ProPixelizer</code>, open the <code>Samples</code> tab, and select <code>Import</code>. Each scene includes a readme in its hierarchy with setup notes and further suggestions.</p>
+    </div>
+    <figure>
+      <img src="how_to_install.png" alt="Unity Package Manager with the ProPixelizer Samples tab open and the Import button highlighted" width="641" height="264" loading="lazy" decoding="async" />
+      <figcaption>The Samples tab in Unity's Package Manager.</figcaption>
+    </figure>
+  </section>
+</div>

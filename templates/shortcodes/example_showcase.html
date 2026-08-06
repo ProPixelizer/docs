@@ -1,0 +1,22 @@
+{% set card_id = name | slugify %}
+<article class="example-card{% if featured %} example-card--featured{% endif %}" id="{{ card_id }}" aria-labelledby="{{ card_id }}-title">
+  <div class="example-card__media">
+    <img
+      src="{{ image }}"
+      alt="{% if alt %}{{ alt }}{% else %}Preview of the {{ name }} example scene{% endif %}"
+      width="512"
+      height="512"
+      decoding="async"
+      {% if featured %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+    />
+  </div>
+  <div class="example-card__content">
+    <h2 id="{{ card_id }}-title">{{ name }}</h2>
+    <div class="example-card__description">{{ body | markdown | safe }}</div>
+    {% if link %}
+      <a class="example-card__link" href="{{ get_url(path=link) | safe }}">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    {% endif %}
+  </div>
+</article>

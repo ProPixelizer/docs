@@ -1,0 +1,12 @@
+@import "../themes/zola_easydocs_theme/sass/main";
+@import "example-gallery";
+
+#article-title-bar {
+  padding: 1rem 3rem;
+}
+
+@media screen and (max-width: 1023px) {
+  #article-title-bar {
+    padding: 0.1rem 1rem;
+  }
+}
