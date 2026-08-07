@@ -5,16 +5,15 @@ date= 2024-10-19
 +++
 
 ProPixelizer requires **Universal Render Pipeline**; the current release is tested on the versions of Unity below:
-- Unity 6.0000.023f1 (compatibility mode)
-- Unity 2022.3.50f1
-- Unity 2021.3.45f1
-- Unity 2020.3.48f1
+- Unity 6.5.5f1
+- Unity 6.3.20f1 (rendergraph, **not** compatibility mode)
+- Unity 2022.3.62f3
 
 Tests include the following targets:
-- Windows PC (Direct X, OpenGL and Vulkan APIs).
-- M1 Mac and iOS (Metal API).
-- webGL ES 2.0 (firefox and chrome), running on a desktop.
-- Android.
+- Windows PC (Direct X, OpenGL and Vulkan APIs)
+- M1 Mac and iOS (Metal API)
+- webGL ES 2.0 (firefox and chrome), running on a desktop
+- Android
 
 ## Version Compatibility
 
