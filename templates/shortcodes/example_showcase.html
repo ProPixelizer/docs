@@ -1,14 +1,36 @@
 {% set card_id = name | slugify %}
+{% if alt %}
+  {% set media_description = alt %}
+{% else %}
+  {% set media_description = "Preview of the " ~ name ~ " example scene" %}
+{% endif %}
 <article class="example-card{% if featured %} example-card--featured{% endif %}" id="{{ card_id }}" aria-labelledby="{{ card_id }}-title">
   <div class="example-card__media">
-    <img
-      src="{{ image }}"
-      alt="{% if alt %}{{ alt }}{% else %}Preview of the {{ name }} example scene{% endif %}"
-      width="512"
-      height="512"
-      decoding="async"
-      {% if featured %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
-    />
+    {% if video %}
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        width="512"
+        height="512"
+        aria-label="{{ media_description }}"
+      >
+        <source src="{{ video }}.webm" type="video/webm" />
+        <source src="{{ video }}.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+    {% else %}
+      <img
+        src="{{ image }}"
+        alt="{{ media_description }}"
+        width="512"
+        height="512"
+        decoding="async"
+        {% if featured %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+      />
+    {% endif %}
   </div>
   <div class="example-card__content">
     <h2 id="{{ card_id }}-title">{{ name }}</h2>

@@ -72,7 +72,8 @@
   background: #202520;
 }
 
-.example-card__media img {
+.example-card__media img,
+.example-card__media video {
   display: block;
   width: 100%;
   height: 100%;
