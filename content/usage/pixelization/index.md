@@ -27,7 +27,7 @@ This later 'hybrid' style is reminiscent of games from the 90s like Breath of Fi
 A scene from the playstation game 'Breath of Fire IV' demonstrating a hybrid style.
 {% end %}
 
-{% article_image(image="bats.gif", gif=true) %}
+{% article_image(video="demo1") %}
 A hybrid setup in ProPixelizer. The characters are drawn pixelated, while a low poly environment is used for the surroundings.
 {% end %}
 
@@ -35,13 +35,13 @@ A hybrid setup in ProPixelizer. The characters are drawn pixelated, while a low 
 
 Despite being a popular method, using a low-resolution render target has a major drawback: In order to prevent pixel creep artefacts from occuring, objects must be snapped to the pixels of the low-resolution target. When the target is more pixelated, the object motion becomes more constrained. This has a negative effect on the 'user feel' in games that require precise feedback, such as action rpgs and arcade games - the motion becomes clunkier because small 'sub-pixel' increments are not possible.
 
-{% article_image(image="full_screen_wo_pixel_expansion.gif", gif=true) %}
+{% article_image(video="fullscreen") %}
 Creepless motion using a low-resolution render target. Individual objects must move in increments of the low-resolution render target.
 {% end %}
 
 ProPixelizer solves this problem using **Pixel Expansion**. I created this method specifically for ProPixelizer, and describe its implementation [here](https://medium.com/@elliotbentine/pixelizing-3d-objects-b55ec33328f1), under attempt 3. This technique works by drawing objects as a dithered pattern, and then expanding these dots into larger pixels through a post process. The result is that a given level of pixelization can be achieved using a smaller low-resolution target pixel size, and thus smooth movement can be retained. The method also supports per-object pixel sizes.
 
-{% article_image(image="full_screen_w_pixel_expansion.gif", gif=true) %}
+{% article_image(video="expansion") %}
 Creepless motion using a low-resolution render target and pixel expansion. Apparent sub-pixel motion between objects is possible because the low-resolution render target pixel size can be smaller while maintaining the same apparent level of pixelisation. Per-object pixel sizes are also supported.
 {% end %}
 

@@ -72,7 +72,4 @@ Moire patterns are less visible when the pixel sizes are large.
 
 **Option 2: Make sure your pixels are an integer number of screen pixels.** This approach completely eradicates the Moiré pattern by allowing the low resolution texture to perfectly scale into the screen texture without any interpolation or aliasing artefacts.
 
-
-
-
 ## Shimmer

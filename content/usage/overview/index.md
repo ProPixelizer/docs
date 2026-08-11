@@ -25,6 +25,6 @@ Cheers!
 Elliot
 
 
-{% article_image(image="bats.gif", gif=true) %}
-An example scene created in ProPixelizer.
+{% article_image(video="demo1") %}
+A selectively-pixelated hybrid scene created in ProPixelizer.
 {% end %}

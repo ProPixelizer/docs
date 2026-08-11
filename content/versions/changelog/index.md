@@ -3,7 +3,7 @@ title = "Version History"
 weight = 10
 +++
 
-## Version 2.0.2
+## Version 2.0.3
 
 _Version 2.0 is a substantial rewrite of ProPixelizer to include support for both rendergraph and non-rendergraph rendering pathways. It also adds lots of new features and bug fixes._
 
@@ -15,6 +15,7 @@ _Version 2.0 is a substantial rewrite of ProPixelizer to include support for bot
 - **Added** depth testing to normal-derived edges (e.g. to reveal steps)
 - **Added** Automatic rescaling to preserve world-space pixel size when zooming.
 - **Added** Automatic rescaling to preserve world-space pixel size when changing screen resolution.
+- **Added** Optional pixel art antialiasing filter to reduce shimmer.
 - **Added** ProPixelizer SubTarget for ShaderGraph - use it like a lit shadergraph, all pixelisation/dithering/color grading/cel shading/outlines are handled for you. Provides per-pixel control over outlines.
 - **Added** Uber shader, a new drop-in replacement for PixelizedWithOutline.
 - **Added** Metallic and Specular workflows
