@@ -17,13 +17,13 @@
         height="512"
         aria-label="{{ media_description }}"
       >
-        <source src="{{ video }}.webm" type="video/webm" />
-        <source src="{{ video }}.mp4" type="video/mp4" />
+        <source src="{{ get_url(path=page.colocated_path ~ video ~ ".webm") | safe }}" type="video/webm" />
+        <source src="{{ get_url(path=page.colocated_path ~ video ~ ".mp4") | safe }}" type="video/mp4" />
         Your browser does not support embedded video.
       </video>
     {% else %}
       <img
-        src="{{ image }}"
+        src="{{ get_url(path=page.colocated_path ~ image) | safe }}"
         alt="{{ media_description }}"
         width="512"
         height="512"

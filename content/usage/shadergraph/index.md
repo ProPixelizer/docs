@@ -25,10 +25,6 @@ ProPixelizer will automatically add the required material properties, rendering 
 
 ![SubTarget properties](subtarget_props.png)
 
-When creating your own graphs, **the only requirement is that you include the ProPixelizer SG Alpha node**, as in the example below.
-
-![Required node](required.png)
-
 ## Example: Uber Shader
 
 For an example, let's take a look at the `ProPixelizerUberShader`, which is located at `ProPixelizer/ShaderGraph`.
@@ -36,12 +32,18 @@ For an example, let's take a look at the `ProPixelizerUberShader`, which is loca
 ![Uber ShaderGraph View](uber.png)
 
 There are two main calculations going on here to determine (i) a lit color, which will receive light; and (ii) an emission color, which is independent of light in the scene.
-- The lit color uses the `DiffuseVertexcolorWeight` float parameter to blend between either white or the model's `Vertex color`. The result is multiplied by the `color` property to tint it, and then multiplied again by the `Albedo` texture. This is fed into the `Base color` input of the SubTarget.
+- The lit color uses the `DiffuseVertexcolorWeight` float parameter to blend between either white or the model's `Vertex color`. The result is multiplied by the `color` property to tint it, and then multiplied again by the `Albedo` texture. This is fed into the `Base color` input of the SubTarget. The alpha channel is fed into `Alpha`.
 - The emission color is similar. We use the `EmissiveVertexcolorWeight` float parameter to blend between white or the model's `Vertex color`. The result is multiplied by the `Emissioncolor`, and then multiplied by the `Emission` texture. This is fed into the `Emission` input of the SubTarget.
+
+The other areas of the graph follow what you might expect from the Unity lit shader:
+- Normals are sampled from the bump map and wired into `Normal`.
+- Metallicness is sampled from the metallic map and wired into `Metallic`.
+- Specular colour is sampled from the specular map and wired into `Specular Color`
+- Smoothness is taken from either the metallic or specular map, depending on workflow, and wired into `Smoothness`.
 
 ## Example: Animated dashed outline
 
-_This example can be found in the Example Assets, under `ShaderGraph`._
+_This example can be found in the [examples](/getting_started/examples), under `ShaderGraph`._
 
 As mentioned above, the ProPixelizer SubTarget also gives you _per pixel_ control over edges and outlines. In the following example, we use this to create an animated dashed outline - the sort you might have to indicate a unit is selected in an RTS, for instance.
 

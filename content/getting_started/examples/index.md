@@ -62,7 +62,7 @@ ProPixelizer supports both Forward and Forward+ for virtually unlimited addition
       <p>In Unity's Package Manager, choose <code>Packages: In Project</code>, select <code>ProPixelizer</code>, open the <code>Samples</code> tab, and select <code>Import</code>. Each scene includes a readme in its hierarchy with setup notes and further suggestions.</p>
     </div>
     <figure>
-      <img src="how_to_install.png" alt="Unity Package Manager with the ProPixelizer Samples tab open and the Import button highlighted" width="641" height="264" loading="lazy" decoding="async" />
+      {{ colocated_image(image="how_to_install.png", alt="Unity Package Manager with the ProPixelizer Samples tab open and the Import button highlighted", width=641, height=264) }}
       <figcaption>The Samples tab in Unity's Package Manager.</figcaption>
     </figure>
   </section>
