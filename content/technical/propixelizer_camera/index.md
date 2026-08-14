@@ -9,13 +9,13 @@ The `ProPixelizerCamera` is a MonoBehavior that should be added to camera object
 
 ### Pixelization
 
-The `Pixelization Filter` controls what objects should be pixelated, allowing you to switch between 'hybrid' styles (where only some objects are pixelated) and full screen pixelization.
+The `Pixelization Filter` controls what objects should be pixelated, allowing you to switch between 'hybrid' styles (where only some objects are pixelated) and full screen pixelization:
 - `Full Scene` pixelates the entire scene.
-- `Only ProPixelizer` will only pixelate ProPixelizer materials and shaders, including ones you create [using the ShaderGraph SubTarget](@/usage/shadergraph/index.md).
+- `Only ProPixelizer` onlys pixelate ProPixelizer materials and shaders, including ones you create [using the ShaderGraph SubTarget](@/usage/shadergraph/index.md).
 
-Additionally, when operating with `Full Scene` additional options are available:
-- `Use Pixel Art Upscaling` will enable or disable use of a pixel art upscaling filter when blitting the low-res target back to the screen. This can be useful to reduce [shimmer artefacts](@/tips_and_tricks/artefacts/index.md)
-- You may choose between a two methods of rendering the low-res target. The `Virtual` camera path is faster, and works by redirecting URP's opaque, transparents and skybox calls into the ProPixelizer low-res target, but may have compatibility issues with other assets. The `Subcamera` path uses a second camera to render the scene at low resolution; it is more widely compatible, but less performant.
+The `Low-res method` controls how the low-resolution target is produced. The `Virtual` camera path is faster, and works by redirecting URP's opaque, transparents and skybox calls into the ProPixelizer low-res target, but may have compatibility issues with other assets. The `Subcamera` path uses a second camera to render the scene at low resolution; it is more widely compatible, but (slightly) less performant.
+
+`Use Pixel Art Upscaling` will enable or disable use of a pixel art upscaling filter when blitting the low-res target back to the screen. This can be useful to reduce [shimmer artefacts](@/tips_and_tricks/artefacts/index.md).
 
 ### Pixel size
 
@@ -24,7 +24,7 @@ There are several `Mode`s available to determine the pixelization of the low res
 - `Fixed Downscaling Ratio` defines the low-res target resolution as a fixed multiple of the screen resolution. Note that changes in screen resolution will change the apparent pixelisation of the object.
 - `Fixed Target Resolution` allows you to define a fixed height of the low-res target. This is useful if emulating a specific hardware, for example '320p'.
 
-### Fullscreen options
+### Camera options
 
 The `Fullscreen Color Grading LUT` allows you to apply color grading and dithering to the entire scene by specifying a color palette LUT. You can use ProPixelizer to create your own. These properties can be specified for individual cameras. _Note: It's still my firm belief that dithering looks better when applied at the object level, so that the dither pattern can move with the object. ProPixelizer now supports both of these approaches, so don't take my word for it - decide for yourself what you like best!_
 

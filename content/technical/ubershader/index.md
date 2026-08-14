@@ -7,7 +7,7 @@ The Uber shader is a general purpose object shader provided with ProPixelizer th
 
 **Note:** _Previous versions of ProPixelizer featured the `PixelizedWithOutline` shader. The Uber shader is a drop-in replacement shader, which has all the features of the old shader while adding many more, eg. Forward+ support, Hybrid renderer support, GPU Instancing. It is recommended to upgrade your `PixelizedWithOutline` materials to the Uber shader._
 
-![Uber shader inspector view](uber.png)
+![Uber shader inspector view](uber1.png)
 
 ### ProPixelizer Properties
 
@@ -21,6 +21,8 @@ These properties are present for all [ProPixelizer SubTarget](@/usage/shadergrap
 **Lighting:**
 
 - `Lighting Ramp`: a texture ramp used for cell shading, which helps give a pixel-art aesthetic. When rendering the object, the value of the lit HSV color is used as a coordinate to sample the lighting ramp.
+- `Lighting Ramp Range`: controls the scaling of the lighting ramp bands against your scene illumination. The default value of 1 is good for most cases. If your scene is very dark, you may wish to use a lower number here to focus the cel shading bands on a smaller range of lighting values. Likewise, if your scene lighting saturates the cel shading quickly, you can use a higher number.
+- `Shadow Tint`: Tints the shadow color. By default the tint is off (`alpha=0`); to enable it, use a color with non-zero alpha.
 - `Ambient Light`: fine control over ambient lighting conditions. The `Constant Weight` slider can be used to adjust between only using scene ambient light (0), which uses spherical harmonics, and only using the `Constant Color` (1). Some hand-drawn pixel art styles implicitly assume a fixed constant ambient light, so this option provides an ability to fine tune between those styles and 3D pixel art where ambient light can be included in the object shading.
 
 **Pixelization**
@@ -31,6 +33,8 @@ These properties are present for all [ProPixelizer SubTarget](@/usage/shadergrap
 
 - `ID`: A unique integer in the range (0, 255). Outlines are drawn when pixels have an ID different to those around them. If two objects should have outlines when they meet, give them different IDs (eg, two enemies). If they should not have outlines (eg, a character and their equipment), give them the same ID.
 
+![Uber shader surface inputs](uber2.png)
+
 ### Surface Inputs
 
 These closely match similar properties from the URP Lit shader.
@@ -38,11 +42,17 @@ These closely match similar properties from the URP Lit shader.
 - `Albedo` texture and `Color`: define the base color of the model before lighting calculations, and default to white if unassigned. The alpha channel of the `Albedo` texture is used for alpha clipping.
 - `Normal Map`: an optional normal map to add shading detail to the model. In general, I find that cel shading in pixel art tends to work best without normal maps and using smooth shading on models, but there are some situations (eg. scenery) where normal maps can be useful.
 - `Emission` texture and `Emission Color`: provide unlit colors for your material. Think laser beams, red eyes on skeletons, etc - anything you want to be bright even when in darkness. The color is an HDR property to support bloom post processing.
-- `DiffuseVertexColorWeight` and `EmissiveVertexColorWeight`: these sliders control whether any vertex colors in the mesh should be used to additionally tint the lit and unlit colors of the mesh. Unity's particle system uses vertex color for 'per particle' coloring. Some Synty models have black vertex colors on some mesh areas.
+- `DiffuseVertexColorWeight` and `EmissiveVertexColorWeight`: these sliders control whether any vertex colors in the mesh should be used to additionally tint the lit and unlit colors of the mesh. Unity's shuriken particle system uses vertex color for 'per particle' coloring. Some Synty models have black vertex colors on some mesh areas.
 - `Alpha Clip Threshold`: the minimum alpha value of the `Albedo` and `Color` required to draw parts of the mesh.
 
-**Outline properties**, for more information on available outline types see [the outline section](@/usage/outlines/index.md).
+- `Highlights / Specular Color` and `Specular Map`: these determine how specular highlights are calculated when using the `Specular` workflow.
+- `Highlights / Metallic Map` and `Metallic`: these determine how highlights are calculated when using the `Metallic` workflow.
+- `Smoothness`: Controls highlight size and intensity in both workflows. Smoother materials have brighter, sharper highlights. Depending on the workflow, this value is further multiplied by either the `Metallic Map` or the `Specular Map` alpha channels to localise highlights. 
+
+_Note: if you want a hand-drawn pixel art look, I recommend using specular workflow, black specular color, and smoothness=0._
+
+**Lines**, for more information on available outline types see [the outline section](@/usage/outlines/index.md).
 
 - `Outline Color`: the color to use for the silhouette outline, with outline strength controlled by the alpha the alpha value; alpha values of 0 can be used for invisible outlines, 1.0 can be used for block color, and fractions to blend with the unoutlined color.
-- `Edge Highlight`: lightens or darken edges detected by inspection of scene normals. Requires that 'Use Normals For Edge Detection' is enabled on the Render Feature. Color values less than 0.5 will darken edges, color values above 0.5 will lighten edges, and values of 0.5 will make no difference.
+- `Edge Highlight Color`: lightens or darken edges detected by inspection of scene normals. Requires that 'Use Normals For Edge Detection' is enabled on the Render Feature. Color values less than 0.5 will darken edges, color values above 0.5 will lighten edges, and values of 0.5 will make no difference.
 - `Edge Bevel Weight`: Controls the strength of edge bevelling, which changes the mesh normals along detected edges to enable light-reactive edges.
