@@ -8,8 +8,7 @@ date = 2024-10-19
   <p class="examples-intro">Here you can explore the sample scenes included with ProPixelizer. Each one focuses on a practical technique you can inspect, adapt, and use in your own Unity project.</p>
 
   <aside class="examples-import-callout" aria-label="Import information">
-    <p>These samples are <strong>included with ProPixelizer,</strong> you can import every scene from the Package Manager.</p>
-    <a href="#import-samples">View import steps ↓</a>
+    <p>These examples are included with ProPixelizer in the <strong>ExampleAssets</strong> folder.
   </aside>
 
   <div class="examples-grid">
@@ -54,16 +53,9 @@ Apply ProPixelizer to different cameras within a URP camera stack.
 ProPixelizer supports both Forward and Forward+ for virtually unlimited additional lights.
 {% end %}
 
-  </div>
+{% example_showcase(name="DBuffer Decals", image="decals.png", alt="Example decal use with ProPixelizer", link="technical/render-feature/") %}
+Use ProPixelizer with DBuffer decals.
+{% end %}
 
-  <section class="examples-install-guide" id="import-samples">
-    <div>
-      <h2>Import the sample scenes</h2>
-      <p>In Unity's Package Manager, choose <code>Packages: In Project</code>, select <code>ProPixelizer</code>, open the <code>Samples</code> tab, and select <code>Import</code>. Each scene includes a readme in its hierarchy with setup notes and further suggestions.</p>
-    </div>
-    <figure>
-      {{ colocated_image(image="how_to_install.png", alt="Unity Package Manager with the ProPixelizer Samples tab open and the Import button highlighted", width=641, height=264) }}
-      <figcaption>The Samples tab in Unity's Package Manager.</figcaption>
-    </figure>
-  </section>
+  </div>
 </div>

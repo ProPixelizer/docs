@@ -11,11 +11,9 @@ Welcome to ProPixelizer, let's get started!
 
 ## First-time install
 
-Make sure you have the Universal Render Pipeline package added to the project (if not, you can add this using the Unity Package Manager). 
-
 ### 1. Import ProPixelizer
 
-Import ProPixelizer from the Unity Package Manager; it must be located at Assets/ProPixelizer, which is the default location Unity suggests.
+Add ProPixelizer to your project's Assets folder using Unity's package manager.
 
 ### 2. Find your Render Pipeline Asset(s)
 
@@ -42,7 +40,7 @@ You can now add ProPixelizer to each Render Pipeline Asset that you are using.
 
 ## Upgrading an older version of ProPixelizer
 
-If your project is already using a previous version of ProPixelizer which was imported into your Project's `Assets` folder, **please delete this old version first** and then import the new version using the Unity Package Manager. The new version will be installed to `Packages/ProPixelizer`.
+If your project is already using a previous version of ProPixelizer which was imported into your Project's `Assets` folder, **please delete this old version first** and then import the new version using the Unity Package Manager.
 
 ProPixelizer uses the same `.meta` files for all assets and source files between versions and so your project will automatically use the updated scripts, Monobehaviors and assets from the new package version. ProPixelizer materials will automatically detect if updates are required.
 
