@@ -19,9 +19,10 @@ ProPixelizer will automatically handle sub-pixel camera motion for you: as your 
 
 ## Low-resolution filter options
 
-ProPixelizer lets you choose how much of your scene should be pixelated. You may choose to have either the full scene rendered to the low-resolution render target, or just ProPixelizer materials. This allows you to create everything from 100% pixel art scenes to 'hybrid' scenes that combine polygons and pixelart. 
+ProPixelizer lets you choose how much of your scene should be pixelated. You may choose to have either the full scene rendered to the low-resolution render target, or just ProPixelizer materials. 
+This setting in ProPixelizer is controlled by the `Pixelization Filter` option on the [ProPixelizer Camera](@/technical/propixelizer_camera).
 
-This later 'hybrid' style is reminiscent of games from the 90s like Breath of Fire IV, Final Fantasy, and Populous: The Beginning where characters where often rendered as sprites and the background often rendered as low-poly 3d models.
+This allows you to create everything from 100% pixel art scenes to 'hybrid' scenes that combine polygons and pixelart. This later 'hybrid' style is reminiscent of games from the 90s like Breath of Fire IV, Final Fantasy, and Populous: The Beginning where characters where often rendered as sprites and the background often rendered as low-poly 3d models.
 
 {% article_image(image="ershin1.png") %}
 A scene from the playstation game 'Breath of Fire IV' demonstrating a hybrid style.

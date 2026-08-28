@@ -13,7 +13,9 @@ Tests include the following targets:
 - Windows PC (Direct X, OpenGL and Vulkan APIs)
 - M1 Mac and iOS (Metal API)
 - webGL ES 2.0 (firefox and chrome), running on a desktop
-- Android
+- Android (GLES3)
+
+_Note: There is currently a known rendering bug in Unity 6.0+ on Android devices with ARM Mali GPUs when using depth textures in the default Vulkan API, see [here](https://issuetracker.unity.com/issues/23555/rendering-corruption-on-arm-mali-gpu-when-using-shader-with-framebuffer-and-depthtexture-with-vulkan-api). Unity's recommendation is to use GLES3 as the rendering API._
 
 ## Version Compatibility
 
