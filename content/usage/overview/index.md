@@ -3,6 +3,8 @@ title = "Overview"
 weight = 1
 +++
 
+ProPixelizer's documentation can be viewed at **[https://propixelizer.github.io/docs/]**.
+
 The ProPixelizer package includes a number of things to achieve perfect pixelisation in your game.
 
 - A [ProPixelizerUberShader](@/technical/ubershader/index.md) which provides control over pixelisation, color grading, outlines, cel shading and more.
