@@ -7,7 +7,7 @@ date= 2024-10-19
 ProPixelizer requires **Universal Render Pipeline**; the current release is tested on the versions of Unity below:
 - Unity 6.6.1f3
 - Unity 2022.3.62f3
-- (If using Unity 6.0-6.3 make sure compatibility mode is disabled to use the new RenderGraph API)
+- If using Unity 6.0-6.3 make sure compatibility mode is disabled to use the new RenderGraph API
 
 Tests include the following targets:
 - Windows PC (Direct X11, Direct X12, GLES3 and Vulkan APIs)
@@ -15,7 +15,7 @@ Tests include the following targets:
 - webGL and webGPU (for Unity 6+)
 - Android (GLES3, Vulkan)
 
-_Note: There is currently a known rendering bug in Unity 6.0-6.5 on Android devices with ARM Mali GPUs when using depth textures in the default Vulkan API, see [here](https://issuetracker.unity.com/issues/23555/rendering-corruption-on-arm-mali-gpu-when-using-shader-with-framebuffer-and-depthtexture-with-vulkan-api). Unity's recommendation is to use GLES3 as the rendering API. In my tests it seems the issue is fixed in 6.6+ _
+**Note:** There is currently a known rendering bug in Unity 6.0-6.5 on Android devices with ARM Mali GPUs when using depth textures in the default Vulkan API, see [here](https://issuetracker.unity.com/issues/23555/rendering-corruption-on-arm-mali-gpu-when-using-shader-with-framebuffer-and-depthtexture-with-vulkan-api). Unity's recommendation is to use GLES3 as the rendering API. In my tests it seems the issue is fixed in 6.6.
 
 ## Version Compatibility
 
