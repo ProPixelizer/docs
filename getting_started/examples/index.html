@@ -1,0 +1,556 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://propixelizer.github.io/docs/main.css">
+    <link rel="icon" href="https://propixelizer.github.io/docs/propixelizer.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title> ProPixelizer | See the examples </title>
+</head>
+<body>
+
+<main>
+    
+    <nav>
+            <div class="title-box">
+                <a href="https:&#x2F;&#x2F;propixelizer.github.io&#x2F;docs">
+                            <img src="https://propixelizer.github.io/docs/head.png" alt="logo" class="header-img"/>
+                        </a>
+                    <h1><a href="https:&#x2F;&#x2F;propixelizer.github.io&#x2F;docs">ProPixelizer</a></h1>
+            </div>
+
+
+            <div id="nav-release-links">
+                <div id="release">2.0.3</div>
+                <div class="growable"></div>
+                <div id="nav-link-widget">
+                    <a href="https://discord.gg/Xdjp8Qs43Y"><img class="link-icon" src="https://propixelizer.github.io/docs/discord.png" alt="discord"/></a>
+                </div>
+            </div>
+
+            <button type="button" id="mobile" class="ms-Icon--GlobalNavButton"
+                aria-label="Toggle navigation" aria-controls="trees" aria-expanded="false"></button>
+            <div id="trees">
+                
+                        <a href="https:&#x2F;&#x2F;propixelizer.github.io&#x2F;docs&#x2F;welcome&#x2F;" >Welcome</a> 
+                    
+
+                    <ul class="subtree">
+                        </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="installation"
+                            checked/>
+                        <label class="tree-toggle-label"
+                            for="installation">Installation</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/getting_started/requirements/">Requirements</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/getting_started/quickstart/">Setup</a>
+                            </li>
+
+                            <li class="active">
+                                <a href="https://propixelizer.github.io/docs/getting_started/examples/">See the examples</a>
+                            </li>
+
+                            </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="using-propixelizer"
+                            />
+                        <label class="tree-toggle-label"
+                            for="using-propixelizer">Using ProPixelizer</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/usage/overview/">Overview</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/camera-setup/">Scene setup</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/pixelization/">Pixelisation Controls</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/outlines/">Edges and Outlines</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/shadergraph/">ShaderGraph Support</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/eliminate-pixel-creep/">Eliminating Pixel Creep</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/palette-tools/">Dither patterns and color palettes</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/stepped-animation/">Stepped Animation Tools</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/tips/">General Tips</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/usage/faq/">FAQ</a>
+                            </li>
+
+                            </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="technical-reference"
+                            />
+                        <label class="tree-toggle-label"
+                            for="technical-reference">Technical Reference</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/technical/render-feature/">ProPixelizer Render Feature</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/technical/propixelizer-camera/">ProPixelizer Camera</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/technical/ubershader/">Uber Shader</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/technical/objectrendersnapable/">Object Render Snapable</a>
+                            </li>
+
+                            </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="tips-and-tricks"
+                            />
+                        <label class="tree-toggle-label"
+                            for="tips-and-tricks">Tips and tricks</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/tips_and_tricks/artefacts/">Common artefacts</a>
+                            </li>
+
+                            </ul>
+                
+                        <input class="tree-toggle" type="checkbox" id="versions"
+                            />
+                        <label class="tree-toggle-label"
+                            for="versions">Versions</label>
+                    
+
+                    <ul class="subtree">
+                        <li >
+                                <a href="https://propixelizer.github.io/docs/versions/updating-from-prev/">Updating from previous versions</a>
+                            </li>
+
+                            <li >
+                                <a href="https://propixelizer.github.io/docs/versions/changelog/">Version History</a>
+                            </li>
+
+                            </ul>
+                </div>
+        </nav>
+    <article>
+        <div id="article-title-bar">
+            <h1 class="page-title"> See the examples </h1>
+        </div>
+        
+        <div id="search-pane">
+            <div id="on_right">
+                <button type="button" id="search-ico" class="ms-Icon--Search"
+                    aria-label="Open search" aria-controls="search-container" aria-expanded="false"></button>
+            </div>
+            <div class="search-container" id="search-container" role="search">
+                <label class="search-label" for="search">Search documentation</label>
+                <div class="search-input-wrap">
+                    <span class="search-input-icon ms-Icon--Search" aria-hidden="true"></span>
+                    <input id="search" type="search" placeholder="Search pages and guides"
+                        autocomplete="off" spellcheck="false">
+                </div>
+                <div class="search-results" aria-live="polite">
+                    <div class="search-results__header"></div>
+                    <ul class="search-results__items"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="article-content">
+            
+        
+        
+        
+            
+            <div class="examples-page">
+  <p class="examples-intro">Here you can explore the sample scenes included with ProPixelizer. Each one focuses on a practical technique you can inspect, adapt, and use in your own Unity project.</p>
+  <aside class="examples-import-callout" aria-label="Import information">
+    <p>These examples are included with ProPixelizer in the <strong>ExampleAssets</strong> folder.
+  </aside>
+  <div class="examples-grid">
+
+
+  
+
+<article class="example-card example-card--featured" id="full-screen" aria-labelledby="full-screen-title">
+  <div class="example-card__media">
+    
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        width="512"
+        height="512"
+        aria-label="Pixelated green scene demonstrating full-screen pixelization and color grading"
+      >
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/fullscreen.webm" type="video/webm" />
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/fullscreen.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="full-screen-title">Full Screen</h2>
+    <div class="example-card__description"><p>Applies pixelization and color grading to the whole camera. URP's postprocessing is used to give a feeling of depth.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/usage/pixelization">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="simple" aria-labelledby="simple-title">
+  <div class="example-card__media">
+    
+      <img
+        src="https://propixelizer.github.io/docs/getting_started/examples/simple.png"
+        alt="Two shaded pixel-art spheres from the Simple example scene"
+        width="512"
+        height="512"
+        decoding="async"
+        loading="lazy"
+      />
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="simple-title">Simple</h2>
+    <div class="example-card__description"><p>A quick example to confirm your installation is correct.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/getting_started/quickstart">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="edges-and-outlines" aria-labelledby="edges-and-outlines-title">
+  <div class="example-card__media">
+    
+      <img
+        src="https://propixelizer.github.io/docs/getting_started/examples/edges.png"
+        alt="Pixel-art cubes showing different edge and outline treatments"
+        width="512"
+        height="512"
+        decoding="async"
+        loading="lazy"
+      />
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="edges-and-outlines-title">Edges and Outlines</h2>
+    <div class="example-card__description"><p>Compare silhouette outlines, edge highlights and lit bevel edges.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/usage/outlines">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="no-creep" aria-labelledby="no-creep-title">
+  <div class="example-card__media">
+    
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        width="512"
+        height="512"
+        aria-label="Animated pixel-art shapes moving without pixel creep"
+      >
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/nocreep.webm" type="video/webm" />
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/nocreep.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="no-creep-title">No Creep</h2>
+    <div class="example-card__description"><p>Eliminate pixel creep from moving objects.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/usage/eliminate-pixel-creep">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="world-space-pixel-size" aria-labelledby="world-space-pixel-size-title">
+  <div class="example-card__media">
+    
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        width="512"
+        height="512"
+        aria-label="Animated building maintaining a consistent world-space pixel size"
+      >
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/worldspacepixelsize.webm" type="video/webm" />
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/worldspacepixelsize.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="world-space-pixel-size-title">World Space Pixel Size</h2>
+    <div class="example-card__description"><p>Maintain a consistent pixel size across different camera zooms and screen resolutions.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/technical/propixelizer-camera">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="color-palettes" aria-labelledby="color-palettes-title">
+  <div class="example-card__media">
+    
+      <img
+        src="https://propixelizer.github.io/docs/getting_started/examples/colorpalettes.png"
+        alt="Pixel-art objects using several palettes and dither patterns"
+        width="512"
+        height="512"
+        decoding="async"
+        loading="lazy"
+      />
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="color-palettes-title">Color Palettes</h2>
+    <div class="example-card__description"><p>Explore color palettes and dither patterns. ProPixelizer contains tools for creating your own dither patterns and palettes.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/usage/palette-tools">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="shadergraph" aria-labelledby="shadergraph-title">
+  <div class="example-card__media">
+    
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        width="512"
+        height="512"
+        aria-label="Custom shadergraphs in ProPixelizer"
+      >
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/shadergraph.webm" type="video/webm" />
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/shadergraph.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="shadergraph-title">ShaderGraph</h2>
+    <div class="example-card__description"><p>Use ProPixelizer to create your own pixelart shaders.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/usage/shadergraph">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="pixel-alignment" aria-labelledby="pixel-alignment-title">
+  <div class="example-card__media">
+    
+      <img
+        src="https://propixelizer.github.io/docs/getting_started/examples/pixelalignment.png"
+        alt="Two connected pixel-art cubes demonstrating pixel alignment"
+        width="512"
+        height="512"
+        decoding="async"
+        loading="lazy"
+      />
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="pixel-alignment-title">Pixel Alignment</h2>
+    <div class="example-card__description"><p>Restrict sub-pixel motion between related objects, such as equipment attached to a character.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/technical/objectrendersnapable">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="camera-stacking" aria-labelledby="camera-stacking-title">
+  <div class="example-card__media">
+    
+      <img
+        src="https://propixelizer.github.io/docs/getting_started/examples/camerastacking.png"
+        alt="Several outlined pixel-art spheres rendered with stacked cameras"
+        width="512"
+        height="512"
+        decoding="async"
+        loading="lazy"
+      />
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="camera-stacking-title">Camera Stacking</h2>
+    <div class="example-card__description"><p>Apply ProPixelizer to different cameras within a URP camera stack.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/usage/camera-setup">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="multiple-lights" aria-labelledby="multiple-lights-title">
+  <div class="example-card__media">
+    
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        width="512"
+        height="512"
+        aria-label="Animated night scene illuminated by several lights"
+      >
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/lights.webm" type="video/webm" />
+        <source src="https://propixelizer.github.io/docs/getting_started/examples/lights.mp4" type="video/mp4" />
+        Your browser does not support embedded video.
+      </video>
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="multiple-lights-title">Multiple Lights</h2>
+    <div class="example-card__description"><p>ProPixelizer supports both Forward and Forward+ for virtually unlimited additional lights.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/technical/render-feature">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+
+
+  
+
+<article class="example-card" id="dbuffer-decals" aria-labelledby="dbuffer-decals-title">
+  <div class="example-card__media">
+    
+      <img
+        src="https://propixelizer.github.io/docs/getting_started/examples/decals.png"
+        alt="Example decal use with ProPixelizer"
+        width="512"
+        height="512"
+        decoding="async"
+        loading="lazy"
+      />
+    
+  </div>
+  <div class="example-card__content">
+    <h2 id="dbuffer-decals-title">DBuffer Decals</h2>
+    <div class="example-card__description"><p>Use ProPixelizer with DBuffer decals.</p>
+</div>
+    
+      <a class="example-card__link" href="https://propixelizer.github.io/docs/technical/render-feature">
+        Read the guide <span aria-hidden="true">→</span>
+      </a>
+    
+  </div>
+</article>
+  </div>
+</div>
+
+        
+    
+        </div>
+
+    </article>
+</main>
+
+
+    <script type="text/javascript" src="https://propixelizer.github.io/docs/elasticlunr.min.js" defer></script>
+    <script type="text/javascript" src="https://propixelizer.github.io/docs/search_index.en.js" defer></script>
+<script type="text/javascript" src="https://propixelizer.github.io/docs/js.js" defer></script>
+
+</body>
+</html>
