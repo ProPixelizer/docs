@@ -41,8 +41,7 @@ _Version 2.0 is a substantial rewrite of ProPixelizer to include support for bot
 - Renamed ProPixelizer material properties to match Universal Lit convention (run `Window > ProPixelizer > Update and Verify Materials`)
 - **Fixed** Fog not affecting ProPixelizer materials.
 - **Fixed** pixel size=3 draw bug on SteamDeck + Vulkan.
-- **Fixed** Absolutely no allocations during render.
-- **Moved** to `Packages/`; please delete the old package in Assets/ when installing.
+- **Fixed** No allocations during render.
 
 ## Version 1.8.1
 

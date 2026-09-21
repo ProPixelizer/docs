@@ -25,7 +25,7 @@ If you are finding that ProPixelizer is not working on WebGL, **check that you h
 This means that the ProPixelizer shaders have not been correctly compiled by Unity. There are typically two possible reasons this occurs:
 
 - In some cases, Unity Package Manager will add the files to the project but not import them correctly.
-    - **Solution:** In the project's Asset Browser locate the Packages/ProPixelizer folder and click 'Reimport'.
+    - **Solution:** In the project's Asset Browser locate the ProPixelizer folder and click 'Reimport'.
 - In earlier versions of ProPixelizer, the shader graph fails to compile because it is generating too many variants, reporting the error: `Error in Graph at Assets/ProPixelizer/ShaderGraph/Pixelised.shadergraph at node PBR Master: Graph is generating too many variants. Either delete Keywords, reduce Keyword variants or increase the Shader Variant Limit in Preferences > Shader Graph.`
     - **Solution:** This can be fixed by increasing the Shader Variant Limit using Edit > Preferences > Shader Graph, e.g. changing from the default 128 to 256. Afterwards, right click the ProPixelizer folder and reimport, then all should be fine.
 
